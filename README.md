@@ -1,3 +1,38 @@
+last_row_id 
+This returns the ID of the last row inserted into the database 
+getting the ID of a new row after performing a SQL insert just involves executing the last_row_id() command 
+
+
+last_insert_rowid()
+This function returns the ROWID of the last row insert from the database connection which invoked the function 
+
+last_insert_rowid()
+Example: SQLite last_insert_rowid() function
+
+sqlite> DELETE from table1;
+sqlite> SELECT * FROM table1;
+sqlite> INSERT INTO table1 VALUES(1, 'AAA');
+SELECT last_insert_rowid();
+
+Copy
+Sample Output:
+
+last_insert_rowid()
+-------------------
+1
+sqlite> INSERT INTO table1 VALUES(2, 'BBB');
+sqlite> SELECT last_insert_rowid();
+
+last_insert_rowid()
+-------------------
+2
+
+[0][0]
+Selects the value from array of array 
+
+
+
+
 # ORM Mapping Classes to Tables Lab
 
 ## Objectives

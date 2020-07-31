@@ -1,5 +1,5 @@
 require 'bundler'
-Bundler.require
+Bundler.require   #required all gems 
 
 require_relative '../lib/student'
 
